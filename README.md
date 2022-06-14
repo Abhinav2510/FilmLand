@@ -77,11 +77,11 @@ Now application is up and running on http://localhost:8080
 ### :test_tube: Testing using Swagger UI
 
 ####Running application
-- Run application using `mvn spring-boot: run` or `java -jar /target/recipe-0.0.1-SNAPSHOT.jar`
+- Run application using `mvn spring-boot: run`
 - Navigate to http://localhost:8080
 - ![image](https://user-images.githubusercontent.com/14979620/173673595-9b92f81f-366d-4d60-a12c-f534f71bfb1c.png)
 
-#### Authenticating for using Recipe API
+#### Authenticating for using FilmLand API
 - under `user-controller` tab you can create user or use already created user to authenticate 
 - to create user use `/users/signup` endpoint
 - to Use default user for application use below JSON object for `user/signin`
@@ -90,6 +90,12 @@ Now application is up and running on http://localhost:8080
   "email":"user@test.com",
   "password":"password1234"
   } 
+  
+  {
+  "email":"user2@test.com",
+  "password":"password1234"
+  } 
+  
 ```
 - It will return response header `authorization` with JWT token
 - ![Screenshot 2021-09-23 at 00 35 49](https://user-images.githubusercontent.com/14979620/134431617-56e89f8d-5c41-4daf-bf00-cae108677c86.png)
